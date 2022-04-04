@@ -1,14 +1,24 @@
 import React from 'react';
-import Slogan from '../Slogan/Slogan';
+import HomePageOne from '../../HomePageOne/HomePageOne';
+import HomePageTwo from '../HomePageTwo/HomePageTwo';
+
 
 const Home = () => {
+
+
     return (
-        <div className='grid  md:grid-cols-2 gap-18 '  >
-            <Slogan></Slogan>
-            <img className='mt-20' src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/04/A3848-How-to-enhance-Soft-Furnishing-Aesthetics-in-your-house.jpg" alt="" />
+
+        <div>
+            <HomePageOne></HomePageOne>
+            <HomePageTwo></HomePageTwo>
         </div>
 
+
+
+
+
     );
+
 };
 
 export default Home;
