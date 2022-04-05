@@ -5,7 +5,15 @@ It is bascially a furniture based website where use can buy different type of fu
 Open http://localhost:3000 to view it in your browser.
 ## 🔗 Project Links
 Github link:
-(https://github.com/Programming-Hero-Web-Course4/lucky-one-Avisheik1721158)
+(https://github.com/programming-hero-web-course-4/product-analysis-website-Avisheik1721158)
 
 ## 🔗 Netlify Links
-https://fantastic-sunshine-82297f.netlify.app/
+( https://deluxe-haupia-72e525.netlify.app )
+
+## Project Description
+
+- This project has 6 routes
+- Each routes build different type of components
+- This project is responsive. That means this project clearly adjust every type of device.
+- If user goes wrongly in any route its return error page and request to go home page.
+

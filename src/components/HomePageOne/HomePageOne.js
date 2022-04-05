@@ -1,5 +1,5 @@
 import React from 'react';
-import Slogan from '../components/Slogan/Slogan';
+import Slogan from '../Slogan/Slogan';
 
 const HomePageOne = () => {
     return (

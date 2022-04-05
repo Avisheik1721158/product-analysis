@@ -96,6 +96,7 @@ const Dashboard = () => {
                     >
                         <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
                         <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                        <Tooltip />
                     </PieChart>
                     <h2 className='text-cyan-300 font-bold text-2xl mr-20 border pr-20 sticky'> Investment vs Revenue </h2>
 

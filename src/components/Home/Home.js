@@ -1,5 +1,5 @@
 import React from 'react';
-import HomePageOne from '../../HomePageOne/HomePageOne';
+import HomePageOne from '../HomePageOne/HomePageOne';
 import HomePageTwo from '../HomePageTwo/HomePageTwo';
 
 
