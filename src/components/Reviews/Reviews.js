@@ -8,10 +8,11 @@ const Reviews = () => {
 
 
 
+
     return (
         <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {
-                reviews.map(review => <Review key={review.id} review={review}
+                reviews.map(item => <Review key={item.id} item={item}
                 ></Review>)
             }
         </div>

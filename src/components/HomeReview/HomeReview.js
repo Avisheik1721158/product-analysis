@@ -11,7 +11,7 @@ const HomeReview = () => {
     return (
         <div className=' grid md:grid-cols-2 lg:grid-cols-3 gap-6'>
             {
-                reviews.slice(0, 3).map(review => <Review key={review.id} review={review}></Review>)
+                reviews.slice(0, 3).map(item => <Review key={item.id} item={item}></Review>)
 
             }
         </div>
