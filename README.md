@@ -1,6 +1,6 @@
 
 # Furniture-Bazar
-It is bascially a furniture based website where use can buy different type of furniture and product will sent a certain amount of time after the completing the order.
+It is bascially a furniture based website where user can buy different type of furniture. The company will sent products a certain amount of time after the completing the order.
 
 Open http://localhost:3000 to view it in your browser.
 ## 🔗 Project Links
