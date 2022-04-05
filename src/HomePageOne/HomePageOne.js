@@ -5,7 +5,7 @@ const HomePageOne = () => {
     return (
         <div className='grid  md:grid-cols-2 gap-18 '  >
             <Slogan></Slogan>
-            <img className='mt-20' src="https://www.re-thinkingthefuture.com/wp-content/uploads/2021/04/A3848-How-to-enhance-Soft-Furnishing-Aesthetics-in-your-house.jpg" alt="" />
+            <img className='mt-20 mx-auto' src="https://images.unsplash.com/photo-1558603668-6570496b66f8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="" />
 
         </div>
     );
