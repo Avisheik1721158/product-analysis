@@ -28,12 +28,13 @@ const Review = (props) => {
 
 
             <div className="mb-12 space-y-4">
+                <img src={img} className="w-28 mx-auto" alt=""></img>
                 <h3 className="text-2xl font-semibold text-purple-900">{name}</h3>
                 <p className="mb-6">{review}</p>
                 <p className="block font-medium text-purple-600">Rating Star: {star}</p>
 
             </div>
-            <img src={img} className="w-2/3 ml-auto -mb-12" alt="illustration" loading="lazy" width="900" height="600"></img>
+
 
 
 

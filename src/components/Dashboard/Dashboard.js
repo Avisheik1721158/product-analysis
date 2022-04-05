@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { LineChart, Line, XAxis, YAxis, Tooltip } from 'recharts';
-import { AreaChart } from 'recharts';
+import { AreaChart, BarChart, Bar, PieChart, Pie, ResponsiveContainer } from 'recharts';
 
 const Dashboard = () => {
     // const [chart, setChart] = useState([])
@@ -51,24 +51,58 @@ const Dashboard = () => {
     ]
 
     return (
-        <div className='grid md:grid-cols-2 mt-5'>
-            <div>
-                <LineChart width={400} height={500} data={data}>
-                    <Line dataKey={'sell'}></Line>
-                    <XAxis dataKey="month"></XAxis>
-                    <YAxis dataKey="sell"></YAxis>
-                    <Tooltip />
-                </LineChart>
-            </div>
-            <div>
-                <AreaChart width={500}
-                    height={500}
-                    data={data}>
-                    <XAxis dataKey="month"></XAxis>
-                    <YAxis dataKey="investment"></YAxis>
-                    <Tooltip />
-                </AreaChart>
-            </div>
+
+        <div>
+            <h2 className='text-2xl font-bold text-red-500'> Diagram with Chart
+
+            </h2>
+            <div className='grid md:grid-cols-2 mt-5 mx-12 px-6'>
+
+                <div>
+                    <LineChart width={400} height={500} data={data}>
+                        <Line dataKey={'sell'}></Line>
+                        <XAxis dataKey="month"></XAxis>
+                        <YAxis dataKey="sell"></YAxis>
+                        <Tooltip />
+                    </LineChart>
+                    <h2 className='text-cyan-300 font-bold text-2xl mr-20 border pr-20 sticky'> Sell </h2>
+                </div>
+                <div>
+                    <AreaChart width={400}
+                        height={500}
+                        data={data}>
+                        <XAxis dataKey="month"></XAxis>
+                        <YAxis dataKey="investment"></YAxis>
+                        <Tooltip />
+                    </AreaChart>
+                    <h2 className='text-cyan-300 font-bold text-2xl mr-20 border pr-20 sticky'> Investment </h2>
+                </div>
+                <div className='mt-5 mb-5'>
+                    <BarChart width={400}
+                        height={500}
+                        data={data}>
+                        <XAxis dataKey="month"></XAxis>
+                        <YAxis dataKey="investment"></YAxis>
+                        <YAxis dataKey="revenue"></YAxis>
+                        <Bar dataKey="investment" stackId="a" fill="#8884d8" />
+                        <Bar dataKey="revenue" stackId="a" fill="#82ca9d" />
+                        <Tooltip />
+                    </BarChart>
+                    <h2 className='text-cyan-300 font-bold text-2xl mr-20 border pr-20 sticky'> Investment vs Revenue </h2>
+                </div>
+                <div className='mt-5 mb-5'>
+                    <PieChart width={400}
+                        height={500}
+                    >
+                        <Pie data={data} dataKey="investment" cx="50%" cy="50%" outerRadius={60} fill="#8884d8" />
+                        <Pie data={data} dataKey="revenue" cx="50%" cy="50%" innerRadius={70} outerRadius={90} fill="#82ca9d" label />
+                    </PieChart>
+                    <h2 className='text-cyan-300 font-bold text-2xl mr-20 border pr-20 sticky'> Investment vs Revenue </h2>
+
+
+
+                </div>
+            </div >
         </div>
 
     );

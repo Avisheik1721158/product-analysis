@@ -5,7 +5,7 @@ import SeeMore from '../SeeMore/SeeMore';
 const HomePageTwo = () => {
     return (
         <div className='mt-10'>
-            <h2 className='mt-3 font-bold '>
+            <h2 className='mt-3 font-bold text-2xl mb-4 '>
                 Customer Review:
             </h2>
             <HomeReview></HomeReview>
